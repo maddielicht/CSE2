@@ -20,14 +20,15 @@ public class CardGenerator{
 int cardIdentity = (int)(Math.random()*52)+1;
 String cardSuitName="";
 //if statement to determine card suit
-if (cardIdentity>=1 && cardIdentity<=13)
+if (cardIdentity>=1 && cardIdentity<=13){
 cardSuitName="Diamonds";
-  else if (cardIdentity>=14 && cardIdentity<=26)
-  cardSuitName="Clubs";
-    else if (cardIdentity>=27 && cardIdentity<=39)
-    cardSuitName= "Hearts";
-      else if (cardIdentity>=40 && cardIdentity<=52)
-      cardSuitName="Spades";
+  else if (cardIdentity>=14 && cardIdentity<=26){
+  cardSuitName="Clubs";}
+  else if (cardIdentity>=27 && cardIdentity<=39){
+  cardSuitName= "Hearts";}
+  else if (cardIdentity>=40 && cardIdentity<=52){
+  cardSuitName="Spades";}
+}
 // use a switch statement to assign the card identity
 switch (cardIdentity%13){
     case 1:
